@@ -1,0 +1,19 @@
+Classify the user's problem description into exactly ONE category from the list below. Provide a confidence score from 0 to 1.
+
+Billing
+- Charges, refunds, duplicate payments
+- Missing or incorrect payouts
+- Subscription pricing or invoices being charged
+
+Technical
+- API errors, integrations, webhooks
+- Platform bugs or unexpected behavior
+
+General
+- How-to questions
+- Feature availability
+- Data exports, reports, or UI navigation
+
+Important rules
+- Questions about exporting, viewing, or downloading invoices are General, not Billing
+- Billing ONLY applies when money was charged, refunded, or paid incorrectly

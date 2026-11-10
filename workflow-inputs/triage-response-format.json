@@ -1,0 +1,14 @@
+{
+  "name": "category_response",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "customer_issue": { "type": "string" },
+      "category": { "type": "string" },
+      "confidence": { "type": "number" }
+    },
+    "additionalProperties": false,
+    "required": ["customer_issue", "category", "confidence"]
+  },
+  "strict": true
+}

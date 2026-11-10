@@ -1,0 +1,13 @@
+# Copy each value from here into the matching node. Lines starting with # are notes; don't copy them.
+
+# 1) First If/Else (Handle low-confidence classifications) - If condition:
+Local.TriageOutputJson.confidence > 0.6
+
+# 2) Else branch of the first If/Else - Deliver a message:
+The support ticket classification has low confidence. Requesting more details about the issue: "{Local.CurrentTicket}"
+
+# 3) Second If/Else (Route the ticket based on category) - If condition:
+Local.TriageOutputJson.category = "Billing"
+
+# 4) If branch of the second If/Else - Deliver a message:
+Escalate billing issue to human support team.
